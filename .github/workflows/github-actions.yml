@@ -7,7 +7,7 @@ on:
             - '*'
 jobs:
     unit-test:
-        container: cuaesd/aesd-autotest:unit-test
+        container: cuaesd/aesd-autotest:20-unit-test
         runs-on: ubuntu-latest
         steps:
           - uses: actions/checkout@v3
@@ -16,7 +16,7 @@ jobs:
           - name: Run unit test
             run: ./unit-test.sh
     full-test:
-        container: cuaesd/aesd-autotest:assignment2
+        container: cuaesd/aesd-autotest:20-assignment2
         runs-on: ubuntu-latest
         steps:
           - uses: actions/checkout@v3
